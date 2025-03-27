@@ -39,6 +39,36 @@ Xpens.Ai is a smart and AI-powered expense management platform designed to help 
 - PostgreSQL
 - Vercel (for deployment)
 
+
+## 🚀 Landing Page  
+An intuitive and user-friendly landing page showcasing Xpens.AI features.  
+![Landing Page](https://github.com/user-attachments/assets/07786f71-1b49-4814-a090-7e5e1b4664fd)  
+
+## 🔒 Secure Login  
+Users can log in securely using Clerk authentication for protected access.  
+![Secure Login](https://github.com/user-attachments/assets/e0ba746d-658f-4010-a14a-3002942ab99d)  
+
+## 📊 Dashboard Access  
+- Add multiple accounts  
+- Manage transactions  
+- Get an overview of all expenses  
+![Dashboard](https://github.com/user-attachments/assets/55d58730-50ab-4ebc-9069-369dc65982ee)  
+
+## 📝 Add Transactions  
+- **Manual entry**: Enter transaction details manually.  
+- **AI-powered scanning**: Upload a receipt, and AI extracts expense details automatically.  
+![Add Transaction](https://github.com/user-attachments/assets/a473ff25-9693-40cb-b269-996f0609c7db)  
+
+## 📁 Category-wise Expense Tracking  
+Categorize expenses for a clear financial breakdown.  
+![Category-wise Expense](https://github.com/user-attachments/assets/2c406b20-5210-43d1-95e7-c0aaa28d8b77)  
+
+## 📈 AI-Powered Expense Chart  
+- Interactive **visual representation** of spending patterns.  
+- Get **insights** into financial habits.  
+![Expense Chart](https://github.com/user-attachments/assets/6aad88da-9182-4791-8629-79f36df0238d)  
+
+
 ### Clone the Repository
 ```sh
 git clone https://github.com/biswarupmahato7/Xpens.Ai.git
@@ -81,7 +111,7 @@ npm run dev
 ## 📩 Contact
 For any issues or feature requests, feel free to reach out:
 - **GitHub**: [@biswarupmahato7](https://github.com/biswarupmahato7)
-- **Email**: biswarupmahato7@example.com
+- **Email**: biswarupmahato731@gmail.com
 
 ---
 Made with ❤️ by **Biswarup Mahato**
