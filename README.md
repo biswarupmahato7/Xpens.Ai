@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Xpens.Ai
 
-## Getting Started
+Xpens.Ai is a smart and AI-powered expense management platform designed to help users track, analyze, and manage their financial activities efficiently. It leverages AI capabilities to provide spending insights, automate categorization, and deliver financial recommendations. Additionally, it integrates email notifications for transaction updates and important alerts.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🌟 Core Features
+- **User Authentication**: Secure login and registration with Clerk authentication.
+- **Expense Tracking**: Add, edit, and delete transactions with real-time updates.
+- **Category Management**: Categorize expenses for better organization.
+- **Graphical Analytics**: Interactive charts to visualize spending trends.
+- **Multi-Currency Support**: Manage expenses in different currencies.
+- **Export Data**: Download transaction history for financial reporting.
+
+### 🤖 AI Integration
+- **AI-Powered Insights**: The system analyzes user transactions and provides insights into spending patterns.
+- **Automated Categorization**: Uses AI to categorize expenses automatically, reducing manual effort.
+- **Smart Budgeting**: AI suggests budgeting strategies based on past expenses and spending habits.
+- **Predictive Expense Analysis**: Forecasts future expenses and alerts users about potential overspending.
+
+### ✉️ Email Notification System
+- **Transaction Alerts**: Sends email notifications for each transaction.
+- **Monthly Expense Summary**: Users receive a summary of their expenses at the end of each month.
+- **Budget Exceed Alerts**: Notifies users when they are about to exceed their budget.
+- **Security Notifications**: Alerts for suspicious activity or login attempts.
+
+## 🛠️ Tech Stack
+- **Frontend**: Next.js (React), Tailwind CSS, GSAP (for animations)
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL (with Prisma ORM)
+- **Authentication**: Clerk
+- **Email Notifications**: Nodemailer
+- **AI Processing**: OpenAI API (for smart insights and recommendations)
+- **Deployment**: Vercel
+
+## 📦 Installation & Setup
+### Prerequisites
+- Node.js (v16+)
+- PostgreSQL
+- Vercel (for deployment)
+
+### Clone the Repository
+```sh
+git clone https://github.com/biswarupmahato7/Xpens.Ai.git
+cd Xpens.Ai
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Setup Environment Variables
+Create a `.env` file in the root directory and configure the following:
+```env
+DATABASE_URL=your_postgresql_url
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+OPENAI_API_KEY=your_openai_api_key
+EMAIL_SERVICE=your_email_service
+EMAIL_USER=your_email@example.com
+EMAIL_PASS=your_email_password
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Run Database Migrations
+```sh
+npx prisma migrate deploy
+```
 
-## Learn More
+### Start the Development Server
+```sh
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment on Vercel
+1. Push the project to GitHub.
+2. Go to [Vercel](https://vercel.com/), create a new project, and link your GitHub repo.
+3. Add environment variables under **Project Settings > Environment Variables**.
+4. Deploy and enjoy Xpens.Ai!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📩 Contact
+For any issues or feature requests, feel free to reach out:
+- **GitHub**: [@biswarupmahato7](https://github.com/biswarupmahato7)
+- **Email**: biswarupmahato7@example.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+Made with ❤️ by **Biswarup Mahato**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
